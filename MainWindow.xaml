@@ -1,0 +1,101 @@
+﻿<Window x:Class="FileHandlingConcepts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileHandlingConcepts"
+        mc:Ignorable="d"
+        Title="File Handling Concepts"
+        Height="600"
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        Background="#FFF0F5">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="30">
+
+            <TextBlock Text="FILE HANDLING CONCEPTS"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       Foreground="#C2185B"
+                       HorizontalAlignment="Center"
+                       Margin="0,10,0,25"/>
+
+            <TextBlock Text="File Operations"
+                       FontSize="20"
+                       FontWeight="SemiBold"
+                       Foreground="#880E4F"
+                       Margin="0,0,0,10"/>
+
+            <UniformGrid Columns="2" Margin="0,0,0,25">
+
+                <Button Content="Create Files"
+                        Name="btnCreateFile"
+                        Click="Createfile_Click"
+                        Margin="5" Padding="12"
+                        Background="#F8BBD0"/>
+
+                <Button Content="Write File"
+                        Name="btnWriteFile"
+                        Click="writefile_Click"
+                        Margin="5" Padding="12"
+                        Background="#F48FB1"/>
+
+                <Button Content="Read File"
+                        Name="btnReadFile"
+                        Click="readfile_Click"
+                        Margin="5" Padding="12"
+                        Background="#F8BBD0"/>
+
+                <Button Content="Delete File"
+                        Name="btnDeleteFile"
+                        Click="deletefile_Click"
+                        Margin="5" Padding="12"
+                        Background="#F48FB1"/>
+
+            </UniformGrid>
+
+            <TextBlock Text="Folder Operations"
+                       FontSize="20"
+                       FontWeight="SemiBold"
+                       Foreground="#880E4F"
+                       Margin="0,0,0,10"/>
+
+            <UniformGrid Columns="2" Margin="0,0,0,25">
+
+                <Button Content="Create Folder"
+                        Name="btnCreateFolder"
+                        Click="btnCreatefolder_Click"
+                        Margin="5" Padding="12"
+                        Background="#E1BEE7"/>
+
+                <Button Content="Delete Folder"
+                        Name="btnDeleteFolder"
+                        Click="btndeletefolder_Click"
+                        Margin="5" Padding="12"
+                        Background="#CE93D8"/>
+
+            </UniformGrid>
+
+            <TextBlock Text="Get Files from Folder"
+                       FontSize="20"
+                       FontWeight="SemiBold"
+                       Foreground="#880E4F"
+                       Margin="0,0,0,10"/>
+
+            <Button Content="Get Files"
+                    Name="btnGetFiles"
+                    Click="btngetfiles_Click"
+                    Padding="12"
+                    Margin="5"
+                    Background="#D1C4E9"/>
+
+            <TextBlock Text="File Handling using C# and WPF"
+                       FontSize="13"
+                       Foreground="Gray"
+                       HorizontalAlignment="Center"
+                       Margin="0,25,0,5"/>
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>
